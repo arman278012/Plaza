@@ -184,6 +184,7 @@ function applyRideCoupon(rideId, code) {
   return ride;
 }
 
+//cancellation fee is fixed and can be set in .env file, default is 20
 function cancelRide(rideId) {
   const ride = store.rides.get(rideId);
 
